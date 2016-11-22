@@ -10,11 +10,11 @@ export default class Login extends React.Component {
   }
 
   onChange() {
-    var state = {};
     if (LoginStore.error) {
-      state.error = LoginStore.error;
+      this.setState({
+        error: LoginStore.error
+      });
     }
-    this.setState(state);
   }
 
   componentDidMount() {

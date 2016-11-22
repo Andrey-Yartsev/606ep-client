@@ -16,7 +16,7 @@ class ApiRequest {
       }
       opts.body = form;
     }
-    if (path !== 'login') {
+    if (path !== 'login' && path !== 'register') {
       if (!LoginStore.token) {
         throw new Error('Token is not stored for ' + method + ' ' + path);
       }

@@ -5,6 +5,7 @@ import LogoutButton from './LogoutButton';
 import TaskStore from '../stores/TaskStore';
 import Login from './Login';
 import LoginStore from '../stores/LoginStore';
+import Registration from './Registration';
 
 class App extends React.Component {
 
@@ -42,7 +43,7 @@ class App extends React.Component {
     if (this.state.authorized) {
       return (
         <div className="App">
-          <h1>You are logged in <LogoutButton/></h1>
+          <h2>You are logged in <LogoutButton/></h2>
           <AddTaskButton/>
           <hr/>
           <TaskList tasks={this.state.tasks}/>
@@ -51,8 +52,10 @@ class App extends React.Component {
     } else {
       return (
         <div className="App">
-          <h1>Login</h1>
+          <h2>Login</h2>
           <Login/>
+          <h2>Or register</h2>
+          <Registration/>
         </div>
       );
     }
