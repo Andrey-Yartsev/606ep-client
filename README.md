@@ -1,13 +1,13 @@
-#606ep Client
+# 606ep Client
 
-##Before running client
+## Before running client
 Install & run `corsproxy` for cross-domain AJAX requests.
 
     npm install -g corsproxy
     corsproxy
 
 
-##Running client
+## Running client
 
     cd /folder/with/project
     npm install
